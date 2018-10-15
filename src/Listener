@@ -1,0 +1,13 @@
+<?php
+
+namespace ZhiEq\Contracts;
+
+abstract class Listener
+{
+    /**
+     * @param Event $event
+     * @return boolean|string|array
+     */
+
+    abstract public function handle(Event $event);
+}
