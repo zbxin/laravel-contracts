@@ -5,9 +5,24 @@ namespace ZhiEq\Contracts;
 abstract class Listener
 {
     /**
-     * @param Event $event
+     * @param $event
      * @return boolean|string|array
      */
 
-    abstract public function handle(Event $event);
+    abstract public function handle($event);
+
+    /**
+     * @return integer
+     */
+
+    abstract public function order();
+
+    /**
+     * @return int
+     */
+
+    public static function getListenOrder()
+    {
+        return (new static())->order();
+    }
 }
