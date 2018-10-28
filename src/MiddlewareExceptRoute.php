@@ -19,14 +19,10 @@ abstract class MiddlewareExceptRoute
 
     public function checkExpectRoute($request)
     {
-        $result = false;
-        foreach ($this->expectRoute as $path) {
-            if (starts_with($request->path(), substr($path, 1))) {
-                $result = true;
-                break;
-            }
-        }
-        return $result;
+        return count(array_filter($this->expectRoute, function ($route) use ($request) {
+                $route = substr($route, 1);
+                return $request->route()->getName() === $route || $request->route()->uri() === $route;
+            })) > 0;
     }
 
     /**
