@@ -1,12 +1,12 @@
 {
-  "name": "zhieq/laravel-contracts",
-  "description": "zhieq group some laravel contracts",
+  "name": "zbxin/laravel-contracts",
+  "description": "some laravel contracts",
   "type": "library",
   "license": "MIT",
   "authors": [
     {
-      "name": "zhieq",
-      "email": "developer@zhieq.com"
+      "name": "zbxin",
+      "email": "developer@zbxin.com"
     }
   ],
   "require": {
@@ -14,7 +14,7 @@
   },
   "autoload": {
     "psr-4": {
-      "ZhiEq\\Contracts\\": "src"
+      "zbxin\\Contracts\\": "src"
     }
   }
 }
