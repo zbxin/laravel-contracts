@@ -1,7 +1,7 @@
 <?php
 
 
-namespace ZhiEq\Contracts;
+namespace Zbxin\Contracts;
 
 use ArrayAccess;
 use Illuminate\Contracts\Support\Arrayable;

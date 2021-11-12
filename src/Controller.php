@@ -1,6 +1,6 @@
 <?php
 
-namespace ZhiEq\Contracts;
+namespace Zbxin\Contracts;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

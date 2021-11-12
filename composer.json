@@ -14,7 +14,7 @@
   },
   "autoload": {
     "psr-4": {
-      "zbxin\\Contracts\\": "src"
+      "Zbxin\\Contracts\\": "src"
     }
   }
 }
