@@ -3,6 +3,7 @@
 namespace Zbxin\Contracts;
 
 use Illuminate\Bus\Queueable;
+use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -21,7 +22,7 @@ abstract class Job implements ShouldQueue
     |
     */
 
-    use InteractsWithQueue, Queueable, SerializesModels;
+    use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
     abstract public function handle();
 }
