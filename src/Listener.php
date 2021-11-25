@@ -4,12 +4,6 @@ namespace Zbxin\Contracts;
 
 abstract class Listener
 {
-    /**
-     * @param $event
-     * @return boolean|string|array
-     */
-
-    abstract public function handle($event);
 
     /**
      * @return integer
